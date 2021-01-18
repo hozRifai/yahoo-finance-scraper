@@ -12,8 +12,11 @@ except:
 
 # This should work on windows and linux
 # Make sure to change the chromedriver to have the .exe extension
+download_folder_name = "data"
 project_path = os.getcwd()
-saved_data_path = os.path.join(project_path, "data")
+if download_folder_name not in os.listdir(project_path):
+    os.mkdir(download_folder_name)
+saved_data_path = os.path.join(project_path, download_folder_name)
 driver_path = os.path.join(project_path, "chromedriver")
 options = webdriver.ChromeOptions()
 # options.headless = True
