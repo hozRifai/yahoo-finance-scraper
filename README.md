@@ -1,3 +1,9 @@
 # yahoo-finance-scraper
-A simple script that reads a list of symbols from a text file, goes to yahoo finance and download its data and save them in a specified folder (!download).
+<p> The <code> main.py </code> script is responsible for reading a list of us stocks symbols and hit <a href="https://finance.yahoo.com/quote/AAPL/history?p=AAPL">yahoo-finance</a> to download the historical data of each stock.</p>
+
+<ul> for each stock, the script will: 
+  <li> Hit the stock page in yahoo finance </li>
+  <li> From "Time period", it will choose "MAX" to take all the data of the stock </li>
+  <li> Apply the new changes and download the historical data in the specified folder !(download foler)</li>
+</ul>
 
